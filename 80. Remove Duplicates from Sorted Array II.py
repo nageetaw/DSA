@@ -18,14 +18,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        j, count = 1, 1
+        j, count = 1, 1 # j is one that we update and i will scan the list
         for i in range(1 , len(nums)):
-            if nums[i] == nums[i-1]:
+            if nums[i] == nums[i-1]: # if i and previous is same increase count
                 count +=1
             else:
                 count =1
             
-            if count <=2:
+            if count <=2: # since we have to keep at most 2, so update j 
                 nums[j] = nums[i]
                 j+=1
         
