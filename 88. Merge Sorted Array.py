@@ -7,6 +7,11 @@ class Solution(object):
     #     nums1.sort()  # Time complexity O((m+n)log(m+n))
 
     # Optimized -> Two pointer
+
+    # The clever trick here is working backwards from the end of the arrays rather than the front.
+    # becuase at the end we have extra space so we will avoid overwritting of elements
+    
+    # --- IMAGINE: we are try to fill a truck by two different rows of item.
     def merge(self, nums1, m, nums2, n):
         # Time complexity: O(k) or O(m + n)
         # Space complexity: O(1)
