@@ -26,6 +26,24 @@ class Solution:
         return goal == 0
 
 
+    # INTUTION---- BEST SOLUTION OVERALL
+    # we are driving a car as long as we have gasoline in it.
+    # we can fill the tank at the position where we are if the current gasoline amount that we get a current position 
+    # is greater than what we have
+    # and every time we move further we will reduce the gaslone by 1
+    # In case, after any step we reach to negative gasoline we have to return False.
+    def canJump(self, nums: List[int]) -> bool:
+        gas = 0
+        for n in nums:
+            if gas < 0:
+                return False
+            elif n > gas:
+                gas = n
+            gas -= 1
+            
+        return True
+
+
 
 
 
