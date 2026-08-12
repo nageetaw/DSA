@@ -1,6 +1,7 @@
 # RULES
 - Think always about simple solution first
 - Check if sorting or reversing makes it easy to solve
+- Check if counting make sense for the question
 - Think when to use For loop and when to use While loop 
     - If you know when you will get answer -- got for For loop.
     - If using for loop can help avoiding writting if/else to return or assign values -- go for for loop. 
