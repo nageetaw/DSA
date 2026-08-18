@@ -10,3 +10,4 @@
 - TRY to connect the question with real world Scenarios (MOST IMPORTANT POINT)
 - NEVER assume that if the loops are nested it's O(n^2), The trick is to see weather for every i, we are visisting atmost n elements (if yes it's O(n^2)), if we don't revisit or backtrack same index i, it's O(n) -- See 45. Jump Game II Solution to understand this.
 - When solution occurs in two different direction and two pointer and sliding window is not a optimied solution, think of dividing solution into two and them merge: SEE QUESTION 238. Product of Array Except Self.
+- Comman sense - we can only travell all stations if we have more gas than the gas consumptions between all stations:  EXAMPLE 134. Gas Station
